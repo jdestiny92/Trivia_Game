@@ -1,5 +1,6 @@
 h1 {color:darkblue;
-	text-align: center;}
+	text-align: center;
+	font-weight: bold;}
 
 .container{
 	background-color: yellow;
@@ -10,3 +11,24 @@ h1 {color:darkblue;
 	opacity: .7;}
 
 body{background-image: url(https://images3.alphacoders.com/182/182789.jpg);}
+
+#start {
+	position: absolute;
+	width:30%;
+	height: 15%;
+	
+	font-size: 30px;
+	margin-left: 33%;
+	margin-top: 15%;
+}
+
+button:hover{
+	border:5px solid blue;
+	background-color: #ff9999;
+}
+
+#content{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
