@@ -1,0 +1,12 @@
+h1 {color:darkblue;
+	text-align: center;}
+
+.container{
+	background-color: yellow;
+	position:relative;
+	width:70%;
+	height:500px;
+	margin-top: 8%;
+	opacity: .7;}
+
+body{background-image: url(https://images3.alphacoders.com/182/182789.jpg);}
