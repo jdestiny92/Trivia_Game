@@ -284,6 +284,7 @@ function end(){
 	$('#reset').on('click', function(){
 		right = 0;
 		wrong = 0;
+		reset();
 		question1();
 	})
 };
