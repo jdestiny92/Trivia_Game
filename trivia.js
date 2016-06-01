@@ -3,9 +3,23 @@ $(document).ready(function(){
 
 var right = 0;
 var wrong = 0;
+var i = 30;
+
+function timer() {
+	i--;
+	$('#timer').html(i);
+	if(i===0){clearTimeout(counter);};
+};
+
+function reset(){
+	clearTimeout(counter);
+	i = 30;
+};
+
 function question1(){
 
-	$('#content').html('Timer: ');
+	$('#content').html('Timer: <span id="timer"></span>');
+	counter = setInterval(timer, 1000);
 	$('#content').append('<br>Question: What element does Gray Fullbuster use from Fairy Tail?<br>');
 	$('#content').append('<br><button id="answer">A: Ice</button><br>');
 	$('#content').append('<br><button class="wrong">B: Fire</button><br>');
@@ -18,18 +32,20 @@ function question1(){
 	$('#content').append('<img src="http://pa1.narvii.com/5914/fc8f631e1bc0a2ae223588a5c9c7052cfbc9f887_hq.gif">');
 	setTimeout(question2, 3000);
 	});
-
+	
 	$('.wrong').on('click', function(){
 	$('#content').html('Sorry that is incorrect. The correct answer is Ice.<br>');
 	wrong +=1;
 	$('#content').append('<img src="http://pa1.narvii.com/5914/fc8f631e1bc0a2ae223588a5c9c7052cfbc9f887_hq.gif">');
 	setTimeout(question2, 3000);
-	})
-
+	});
 };
 
 function question2(){
-	$('#content').html('Timer: ');
+	
+	$('#content').html('Timer: <span id="timer"></span>');
+	reset();
+	counter = setInterval(timer, 1000);
 	$('#content').append('<br>Who is the rival to the main protagonist from Naruto?<br>');
 	$('#content').append('<br><button class="wrong">A: Rock Lee</button><br>');
 	$('#content').append('<br><button class="wrong">B: Neji</button><br>');
@@ -52,7 +68,10 @@ function question2(){
 };
 
 function question3(){
-	$('#content').html('Timer: ');
+	
+	$('#content').html('Timer: <span id="timer"></span>');
+	reset();
+	counter = setInterval(timer, 1000);
 	$('#content').append('<br>Which anime is this opening theme song from?<br>');
 	$('#content').append('<br><button class="wrong">A: Full Metal Alchemist</button><br>');
 	$('#content').append('<br><button id="answer">B: One Piece</button><br>');
@@ -75,7 +94,10 @@ function question3(){
 };
 
 function question4(){
-	$('#content').html('Timer: ');
+
+	$('#content').html('Timer: <span id="timer"></span>');
+	reset();
+	counter = setInterval(timer, 1000);
 	$('#content').append('<br>Which anime is the background image from?<br>');
 	$('#content').append('<br><button class="wrong">A: Fate Stay Night</button><br>');
 	$('#content').append('<br><button class="wrong">B: Tokyo Ghoul</button><br>');
@@ -98,7 +120,10 @@ function question4(){
 };
 
 function question5(){
-	$('#content').html('Timer: ');
+
+	$('#content').html('Timer: <span id="timer"></span>');
+	reset();
+	counter = setInterval(timer, 1000);
 	$('#content').append('<br>Who is one of the main protagonists from Magi?<br>');
 	$('#content').append('<br><button class="wrong">A: Jafar</button><br>');
 	$('#content').append('<br><button id="answer">B: Aladin</button><br>');
@@ -121,7 +146,10 @@ function question5(){
 };
 
 function question6(){
-	$('#content').html('Timer: ');
+
+	$('#content').html('Timer: <span id="timer"></span>');
+	reset();
+	counter = setInterval(timer, 1000);
 	$('#content').append('<br>From DeathNote: How does a person die if their name is written in the DeathNote?<br>');
 	$('#content').append('<br><button class="wrong">A: Dehydration</button><br>');
 	$('#content').append('<br><button class="wrong">B: Random accident</button><br>');
@@ -144,7 +172,10 @@ function question6(){
 };
 
 function question7(){
-	$('#content').html('Timer: ');
+
+	$('#content').html('Timer: <span id="timer"></span>');
+	reset();
+	counter = setInterval(timer, 1000);
 	$('#content').append('<br>From Hellsing: What is Alucards weapon of choice?<br>');
 	$('#content').append('<br><button id="answer">A: Pistols</button><br>');
 	$('#content').append('<br><button class="wrong">B: Katanas</button><br>');
@@ -167,7 +198,10 @@ function question7(){
 };
 
 function question8(){
-	$('#content').html('Timer: ');
+
+	$('#content').html('Timer: <span id="timer"></span>');
+	reset();
+	counter = setInterval(timer, 1000);
 	$('#content').append('<br>From One Punch Man: Who is Saitamas pupil?<br>');
 	$('#content').append('<br><button class="wrong">A: King</button><br>');
 	$('#content').append('<br><button class="wrong">B: Speed of Sound Sonic</button><br>');
@@ -190,7 +224,10 @@ function question8(){
 };
 
 function question9(){
-	$('#content').html('Timer: ');
+
+	$('#content').html('Timer: <span id="timer"></span>');
+	reset();
+	counter = setInterval(timer, 1000);
 	$('#content').append('<br>From Tokyo Ghoul: What color does Kanekis hair turn?<br>');
 	$('#content').append('<br><button class="wrong">A: Black</button><br>');
 	$('#content').append('<br><button id="answer">B: White</button><br>');
@@ -213,7 +250,10 @@ function question9(){
 };
 
 function question10(){
-	$('#content').html('Timer: ');
+
+	$('#content').html('Timer: <span id="timer"></span>');
+	reset();
+	counter = setInterval(timer, 1000);
 	$('#content').append('<br>What is the main theme of the anime Shokugeki No Soma?<br>');
 	$('#content').append('<br><button class="wrong">A: Martial Arts Fighting</button><br>');
 	$('#content').append('<br><button class="wrong">B: Playing Card Competition</button><br>');
