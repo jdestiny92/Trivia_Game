@@ -18,6 +18,7 @@ function reset(){
 
 function question1(){
 
+	if(i===0){console.log('hi')};
 	$('#content').html('Timer: <span id="timer"></span>');
 	counter = setInterval(timer, 1000);
 	$('#content').append('<br>Question: What element does Gray Fullbuster use from Fairy Tail?<br>');
