@@ -18,7 +18,6 @@ function reset(){
 
 function question1(){
 
-	if(i===0){console.log('hi')};
 	$('#content').html('Timer: <span id="timer"></span>');
 	counter = setInterval(timer, 1000);
 	$('#content').append('<br>Question: What element does Gray Fullbuster use from Fairy Tail?<br>');
@@ -34,12 +33,22 @@ function question1(){
 	setTimeout(question2, 3000);
 	});
 	
+	
 	$('.wrong').on('click', function(){
 	$('#content').html('Sorry that is incorrect. The correct answer is Ice.<br>');
 	wrong +=1;
 	$('#content').append('<img src="http://pa1.narvii.com/5914/fc8f631e1bc0a2ae223588a5c9c7052cfbc9f887_hq.gif">');
 	setTimeout(question2, 3000);
 	});
+	
+	function timeout(){
+	$('#content').html('Time is up! The correct answer is Ice.<br>');
+	wrong +=1;
+	$('#content').append('<img src="http://pa1.narvii.com/5914/fc8f631e1bc0a2ae223588a5c9c7052cfbc9f887_hq.gif">');
+	setTimeout(question2, 3000);
+	};
+
+	setTimeout(timeout, 30000);
 };
 
 function question2(){
@@ -66,6 +75,15 @@ function question2(){
 	$('#content').append('<img src="http://data.whicdn.com/images/21347852/original.gif">');
 	setTimeout(question3, 3000);
 	})
+
+	function timeout2(){
+	$('#content').html('Time is up! The correct answer is Sasuke.<br>');
+	wrong +=1;
+	$('#content').append('<img src="http://data.whicdn.com/images/21347852/original.gif">');
+	setTimeout(question3, 3000);
+	};
+
+	setTimeout(timeout2, 30000);
 };
 
 function question3(){
@@ -92,6 +110,15 @@ function question3(){
 	$('#content').append('<img src="http://1.bp.blogspot.com/-4VyvGrun1-o/UwU0kAzuvPI/AAAAAAAABzs/WPSxpTPSNpY/s1600/tumblr_lxlyra4EW11qcnhspo1_500.gif">');
 	setTimeout(question4, 3000);
 	})
+
+	function timeout3(){
+	$('#content').html('Time is up! The correct answer is One Piece.<br>');
+	wrong +=1;
+	$('#content').append('<img src="http://1.bp.blogspot.com/-4VyvGrun1-o/UwU0kAzuvPI/AAAAAAAABzs/WPSxpTPSNpY/s1600/tumblr_lxlyra4EW11qcnhspo1_500.gif">');
+	setTimeout(question4, 3000);
+	};
+
+	setTimeout(timeout3, 30000);
 };
 
 function question4(){
@@ -118,6 +145,15 @@ function question4(){
 	$('#content').append('<img src="http://k42.kn3.net/taringa/1/2/4/0/6/3/27/neox24ash/714.gif?8010">');
 	setTimeout(question5, 3000);
 	})
+
+	function timeout4(){
+	$('#content').html('Time is up! The correct answer is Fate Zero.<br>');
+	wrong +=1;
+	$('#content').append('<img src="http://k42.kn3.net/taringa/1/2/4/0/6/3/27/neox24ash/714.gif?8010">');
+	setTimeout(question5, 3000);
+	};
+
+	setTimeout(timeout4, 30000);
 };
 
 function question5(){
@@ -127,7 +163,7 @@ function question5(){
 	counter = setInterval(timer, 1000);
 	$('#content').append('<br>Who is one of the main protagonists from Magi?<br>');
 	$('#content').append('<br><button class="wrong">A: Jafar</button><br>');
-	$('#content').append('<br><button id="answer">B: Aladin</button><br>');
+	$('#content').append('<br><button id="answer">B: Aladdin</button><br>');
 	$('#content').append('<br><button class="wrong">C: Sinbad</button><br>');
 	$('#content').append('<br><button class="wrong">D: Amon</button>');
 
@@ -139,11 +175,20 @@ function question5(){
 	});
 
 	$('.wrong').on('click', function(){
-	$('#content').html('Sorry that is incorrect. The correct answer is Aladin.<br>');
+	$('#content').html('Sorry that is incorrect. The correct answer is Aladdin.<br>');
 	wrong +=1;
 	$('#content').append('<img src="http://images6.fanpop.com/image/photos/32700000/Morgiana-Aladdin-magi-the-labyrinth-of-magic-32767121-500-180.gif">');
 	setTimeout(question6, 3000);
 	})
+
+	function timeout5(){
+	$('#content').html('Time is up! The correct answer is Aladdin.<br>');
+	wrong +=1;
+	$('#content').append('<img src="http://images6.fanpop.com/image/photos/32700000/Morgiana-Aladdin-magi-the-labyrinth-of-magic-32767121-500-180.gif">');
+	setTimeout(question6, 3000);
+	};
+
+	setTimeout(timeout5, 30000);
 };
 
 function question6(){
@@ -170,6 +215,15 @@ function question6(){
 	$('#content').append('<img src="http://media3.giphy.com/media/QNQicbzT2pFUk/giphy.gif">');
 	setTimeout(question7, 3000);
 	})
+
+	function timeout6(){
+	$('#content').html('Time is up! The correct answer is Heart Attack.<br>');
+	wrong +=1;
+	$('#content').append('<img src="http://media3.giphy.com/media/QNQicbzT2pFUk/giphy.gif">');
+	setTimeout(question7, 3000);
+	};
+
+	setTimeout(timeout6, 30000);
 };
 
 function question7(){
@@ -196,6 +250,15 @@ function question7(){
 	$('#content').append('<img src="https://s-media-cache-ak0.pinimg.com/originals/15/57/d9/1557d94dc4564187363eeeb183b785f8.gif">');
 	setTimeout(question8, 3000);
 	})
+
+	function timeout7(){
+	$('#content').html('Time is up! The correct answer is Pistols.<br>');
+	wrong +=1;
+	$('#content').append('<img src="https://s-media-cache-ak0.pinimg.com/originals/15/57/d9/1557d94dc4564187363eeeb183b785f8.gif">');
+	setTimeout(question8, 3000);
+	};
+
+	setTimeout(timeout7, 30000);
 };
 
 function question8(){
@@ -222,6 +285,15 @@ function question8(){
 	$('#content').append('<img src="https://67.media.tumblr.com/99f2067eb5d297d824da544a8a79404f/tumblr_nx5ehc1EWQ1qa94xto1_500.gif">');
 	setTimeout(question9, 3000);
 	})
+
+	function timeout8(){
+	$('#content').html('Time is up! The correct answer is Genos.<br>');
+	wrong +=1;
+	$('#content').append('<img src="https://67.media.tumblr.com/99f2067eb5d297d824da544a8a79404f/tumblr_nx5ehc1EWQ1qa94xto1_500.gif">');
+	setTimeout(question9, 3000);
+	};
+
+	setTimeout(timeout8, 30000);
 };
 
 function question9(){
@@ -248,6 +320,15 @@ function question9(){
 	$('#content').append('<img src="https://66.media.tumblr.com/e059b0bc89434d081dcc85e49ae7fac7/tumblr_nrst4rCRUk1u8bkdho1_500.gif">');
 	setTimeout(question10, 3000);
 	})
+
+	function timeout9(){
+	$('#content').html('Time is up! The correct answer is White.<br>');
+	wrong +=1;
+	$('#content').append('<img src="https://66.media.tumblr.com/e059b0bc89434d081dcc85e49ae7fac7/tumblr_nrst4rCRUk1u8bkdho1_500.gif">');
+	setTimeout(question10, 3000);
+	};
+
+	setTimeout(timeout9, 30000);
 };
 
 function question10(){
@@ -274,6 +355,15 @@ function question10(){
 	$('#content').append('<img src="http://pa1.narvii.com/5813/4580eb12cec91ed6a57b07febfee59fb96162890_hq.gif">');
 	setTimeout(end, 3000);
 	})
+
+	function timeout10(){
+	$('#content').html('Time is up! The correct answer is Cooking.<br>');
+	wrong +=1;
+	$('#content').append('<img src="http://pa1.narvii.com/5813/4580eb12cec91ed6a57b07febfee59fb96162890_hq.gif">');
+	setTimeout(end, 3000);
+	};
+
+	setTimeout(timeout10, 30000);
 };
 
 function end(){
